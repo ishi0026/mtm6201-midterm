@@ -5,26 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smile Bake</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <!-- classes for dark background and color around image-->
-        <div class="navigation">
-            <!-- classes for logo image on the navigation bar-->
-            <div class = "logo">
-                <img src="images/logo.jpg" alt="smile_bake_logo" id="smilebake">
-            </div>
-            <!-- class and id for each navigation bar and links-->
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="product.html">Product</a></li>
-                        <li><a href="ourstory.html">Our Story</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-    </header>
+    <!--container for the navigation bar-->
+    <div class="container">
+        <section class="top-nav">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="logo">
+            </a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <span class='menu-button'></span>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="ourstory.html">Our story</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </section>
+    </div>
     <div class="wrapper">
         <section class="contact">
             <!-- contact section has specific classes for each element. Style and name them individually in the grid area -->
