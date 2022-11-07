@@ -118,7 +118,22 @@ h6{
 }
 
 /*Creates nav for mobile*/
+.index-ourstory{
+  display: flex;
+}
+.card img{
+  height: 300px;
+  width: 300px;
+}
 
+.bread-photos {
+  display: flex;
+}
+
+.bread-photos img{
+  height: 300px;
+  width: 300px;
+}
 
 footer {
   color: #fff;
