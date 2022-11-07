@@ -135,6 +135,16 @@ h6{
   width: 300px;
 }
 
+.schedule {
+  display: flex;
+}
+
+.schedule img{
+  height: 900px;
+  width: 900px;
+}
+
+/* -----footer----- */
 footer {
   color: #fff;
   padding: 10px;
