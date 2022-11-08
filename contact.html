@@ -15,47 +15,58 @@
     <div class="container">
         <section class="top-nav">
             <a href="index.html" class="logo">
-                <img src="images/logo.jpg" alt="logo">
+                <img src="images/logo.jpg" alt="Smile bake">
             </a>
-
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="ourstory.html">Our story</a></li>
-                <li><a href="contact.html">Contact</a></li>
+       </div>
+       <div class="menu-nav container">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">Our story</a>
+                </li>
+                <li>
+                    <a href="product.html">Product</a>
+                </li>
+                
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
             </ul>
-        </section>
-    </div>
-    <div class="wrapper">
-        <section class="contact">
-            <!-- contact section has specific classes for each element. Style and name them individually in the grid area -->
+       </div>
+    </nav>
+  <main>
+    <div class="container-message">
+        <!-- contact section has specific classes for each element. Style and name them individually in the grid area -->
+        <div class="contact-flex">
+            
             <div class="contact-title"> 
                 <h2>Contact</h2>
                 <p>We are always looking forward to hearing from you!</p>
             </div>
             <div class="messagearea">
                 <div class="form">
-                    <h3>Send us a message</h3>
                     <form class="send-message" action="#" method="get">
                         <!-- set name form-->
                         <div class="name">
-                            <label for="name">Name*</label>
+                            <label for="name">Name *</label>
                             <input type="text" name="name" id="name">
                         </div>
                         <!-- set email form -->
                         <div class="email">
-                            <label for="email">Mail*</label>
-                            <input type="email" name="email" id="email">
+                            <label for="email">Mail *</label>
+                            <input type="text" name="email" id="email">
                         </div>
-                        <!-- set tell form -->
-                        <div class="tell">
-                            <label for="tell">Tell</label>
-                            <input type="tell" name="tell" id="tell">
+                        <!-- set tel form -->
+                        <div class="tel">
+                            <label for="tel">Tel</label>
+                            <input type="text" name="tel" id="tel">
                         </div>
                         <!-- set message form-->
                         <div class="message">
-                            <label for="message">Message*</label>
-                            <input type="text" id ="message" name="message">
+                            <label for="message">Message *</label>
+                            <textarea id ="message" name="message"></textarea>
                         </div>
                         <!-- set button form-->
                         <div class="submit-button">
@@ -64,6 +75,21 @@
                     </form>
                 </div>
             </div>
+
+        </div>
+  </main>
+
+  <footer>
+    <div class= "copyright">
+        <h6>&copy; Copyright Smile Bake 2022</h6> 
+    </div> 
+    <div class= "sns">    
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+    </div>
+  </footer>
+
 </body>
 
 </html>
