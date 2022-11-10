@@ -174,38 +174,126 @@ h1 {
   margin-bottom: 30px;
 }
 
+/* Featured Products section in the homepage */
 
+main {
+  background-color:rgb(226, 212, 226);
+}
 
-/*Creates nav for mobile*/
-.index-ourstory{
+/* Our story section in the homepage */
+
+.tourstory {
+  padding-left: 10em;
+}
+
+.ourstory {
   display: flex;
-}
-.card img{
-  height: 300px;
-  width: 300px;
-  padding: auto;
+  flex-direction: row;
+  background-color: #FFF;
+  width: 600px;
+  height: 338px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-left: 10em;
+  margin-right: 5em;
+  margin-bottom: 6em;
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+  font-family: 'Gabriola', sans-serif;
+  font-size: 1em;
+  float: left;
 }
 
-.bread-photos {
+
+h3 {
+  font-family: 'Gabriola', sans-serif;
+
+  padding-bottom: 10px;
+}
+
+.ourstory h2, .story-card p {
+  color: rgb(0, 0, 0);
+}
+.ourstory h2 {
+  margin-bottom: 2em;
+}
+
+.firststore {
+  margin-bottom: 20px;
+}
+
+
+/* The Our Story is displayed vertically on mobile and horizontally on desktop */
+
+.ourstory-flex {
   display: flex;
+  flex-direction: row;
 }
 
-.bread-photos img{
-  height: 300px;
-  width: 300px;
-}
-
-.schedule {
+.story-card {
   display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
-.schedule img{
-  height: 900px;
-  width: 900px;
+.story-card p {
+  text-align: left;
+  margin: 0 2em;
+  font-size: 1.2em;
+  padding-bottom: 10px;
 }
+
+.readmore-button {
+  text-align: left;
+  margin: 0 2em;
+  font-size: 1.2em;
+  padding-bottom: 10px;
+}
+
+h2 {
+  color: #000000;
+  font-family: 'Gabriola', sans-serif;
+  text-align: left;
+  font-size: 2em;
+
+ 
+  padding-top: 1em;
+  margin-bottom: 1em;
+  
+}
+
+/* put product images using flex  */
+/* Each product has an image */
+
+.product {
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+
+.product img {
+  width: 70%;
+  height: 100%;
+  margin-bottom: 10px;
+  border: 0.2em;
+  border-color: gray;
+}
+
+.product p {
+  font-size: 1.1em;
+  
+  margin-bottom: 10px;
+}
+
+
+
+
 
 /* Footer Section ok*/
-
 /* The footer section has a backround colour and is displayed horizontally on mobile */
 
 footer {
