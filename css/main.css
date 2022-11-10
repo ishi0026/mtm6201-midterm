@@ -417,6 +417,103 @@ ul {
 
 /***********
 
+ourstory.html Page CSS Style 
+
+
+*************/
+
+/* The Our Story has 3 images and is displayed vertically on mobile and in 2 columns on desktop */
+
+.ourstory-title{
+  text-align: left;
+  font-size: 20pt;
+  margin-left: 2em;
+  padding-top: 1em;
+}
+
+.ourstory-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ align-items: center;
+}
+
+.flex-ourstory {
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 1em;
+}
+
+.origins{
+   width: 500px;
+   height: 200px;
+   padding: 1em;
+   margin: 2em;
+   background-color: white;
+}
+
+.origins h3 {
+   font-size: 30pt;
+   font-weight: bold;
+}
+
+.origins p {
+   font-family: 'Gabriola', sans-serif;
+   font-size: 15pt;
+}
+
+.concept {
+   width: 500px;
+   height: 200px;
+   padding: 1em;
+   margin: 2em;
+   background-color: white;
+}
+
+.concept h3 {
+   font-size: 30pt;
+   font-weight: bold;
+}
+
+.concept p {
+   font-family: 'Gabriola', sans-serif;
+   font-size: 15pt;
+}
+
+.mission {
+   width: 500px;
+   height: 200px;
+   padding: 1em;
+   margin: 2em;
+   background-color: white;
+   
+}
+
+.mission h3 {
+   font-size: 30pt;
+   font-weight: bold;
+}
+
+.mission p {
+   font-family: 'Gabriola', sans-serif;
+   font-size: 15pt;
+}
+
+.ophoto {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.ophoto img {
+  
+   width: 125%;
+   height: 230px;
+}
+
+
+/***********
+
 Contact.html Page CSS Style 
 
 
@@ -425,56 +522,56 @@ Contact.html Page CSS Style
 /* The Contact has several empty spaces for the input of personal information and is displayed vertically on mobile */
 
 .contact-flex {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
 }
 
 .contact-title h2{
-  text-align: left;
-  margin-left: 5em;
-  font-size: 30pt;
-  float: left;
+    text-align: left;
+    margin-left: 5em;
+    font-size: 30pt;
+    float: left;
 }
 
 .contact-title p{
-  text-align: center;
-  font-size: 15pt;
-  font-weight: bold;
-  padding-top: 2em;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: bold;
+    padding-top: 2em;
 }
 
 .messagearea .form{
-display: flex;
-justify-content: center;
-align-items: center;
-  margin-left: 10em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    margin-left: 10em;
 }
 
 .name, .email, .tel, .message{
-  margin-bottom: 3em;
-  white-space: pre;
+    margin-bottom: 3em;
+    white-space: pre;
 }
 
 label{
-  margin-right: 2em;
+    margin-right: 2em;
 }
 
 input[type=text] {
-  width: 500px;
-  height: 2em;
+    width: 500px;
+    height: 2em;
 }  
 
 textarea{
-  width: 500px;
-  height: 10em;
-  text-align: left;
+    width: 500px;
+    height: 10em;
+    text-align: left;
 }
 
 .form {
-  padding-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .submit-button{
-  margin-left: 13em;
+    margin-left: 13em;
 }
