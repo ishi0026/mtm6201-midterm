@@ -170,35 +170,38 @@ nav {
   width: 900px;
 }
 
-/* -----footer----- */
+/* Footer Section */
+
+/* The footer section has a backround colour and is displayed horizontally on mobile */
+
 footer {
-  color: #fff;
+  background-color:#5bce5b;
+
   padding: 10px;
-  background-color: #5bce5b;
-  margin: 0;
-  display:flex;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+}
+
+footer p {
+  text-align: center;
+  font-size: .5em;
 }
 
 footer a {
   color: white;
-  margin: auto;
-  padding:0;
 }
 
-footer li {
+
+.sns li{
   text-decoration: none;
-  margin: auto;
-  padding: 0;
-  list-style: none;
-}
-
-footer p {
-  text-align: left;
+  float: right;
+  margin-right: 10px;
 }
 
 .fa-brands {
   color: white;
-  text-align: right;
 }
 
 footer a:hover {
@@ -209,4 +212,7 @@ footer a:hover {
   color: #5bce5b;
 }
 
+ul {
+  list-style: none;
+} 
 
