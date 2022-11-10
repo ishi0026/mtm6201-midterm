@@ -417,7 +417,95 @@ ul {
 
 /***********
 
-ourstory.html Page CSS Style 
+Product.html Page CSS Style 
+
+
+*************/
+
+/* The Menu title has a bacckground image and the text is centred */
+
+.product-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.product-title h1{
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    font-size: 50pt;
+    font-family: 'Gabriola', sans-serif;
+    text-align:center;
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+
+ /* The Featured products section will be displayed in 3 columns */
+
+ .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr) ;
+}
+
+.product-category{
+    font-family: 'Gabriola', sans-serif;
+    font-weight: bold;
+    font-size: 250%;
+    text-align: center;
+    margin: 1em;
+}
+
+.product-category img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.product{
+    font-family: Arial;
+    font-size: 150%;
+    text-align: center;
+    margin: 1em;
+    justify-content: center;
+	align-items: center;
+}
+
+.product img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.button2 {
+
+    display: block;
+    text-align: center;
+    width: 240px;
+    color: white;
+    background-color: #5bce5b;
+    border-color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2em;
+    margin-bottom: 1.3em;
+}
+
+.button2:hover {
+    background-color: #312C74;
+}
+
+
+/* The heading is aligned to the left */
+
+.left-heading {
+    text-align: left;
+}
+
+
+/***********
+
+about.html Page CSS Style 
 
 
 *************/
