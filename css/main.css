@@ -322,6 +322,52 @@ h2 {
   grid-row: 2 / 3;
 }
 
+/* About us information in the homepage */
+/* The info section is displayed vertically on mobile, and it has a title, paragraphs, a button to go to the About page and an image */
+
+.home-info{
+  margin-left: 10em;
+
+}
+
+.home-info h2 {
+  color: #000000;
+  font-family: 'Gabriola', sans-serif;
+  text-align: left;
+
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 20px;
+  text-align: left;
+  
+}
+
+.home-info div {
+  margin-bottom: 30px;
+  background-size: cover;
+
+}
+
+.scard h3{
+  width: 400px;
+  float:left;
+  margin-left: 5em;
+  font-size: 15pt;
+  font-weight: bold;
+  font-family: 'MyradVariable', serif;
+  white-space: pre;
+}
+
+.calendar img {
+  width: 60%;
+  height: 60%;
+  float: right;
+  margin-top: 5em;
+  margin-left: 2em;
+  margin-right: 10em;
+}
 
 
 /* Footer Section ok*/
@@ -369,3 +415,66 @@ ul {
   list-style: none;
 } 
 
+/***********
+
+Contact.html Page CSS Style 
+
+
+*************/
+
+/* The Contact has several empty spaces for the input of personal information and is displayed vertically on mobile */
+
+.contact-flex {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1em;
+}
+
+.contact-title h2{
+  text-align: left;
+  margin-left: 5em;
+  font-size: 30pt;
+  float: left;
+}
+
+.contact-title p{
+  text-align: center;
+  font-size: 15pt;
+  font-weight: bold;
+  padding-top: 2em;
+}
+
+.messagearea .form{
+display: flex;
+justify-content: center;
+align-items: center;
+  margin-left: 10em;
+}
+
+.name, .email, .tel, .message{
+  margin-bottom: 3em;
+  white-space: pre;
+}
+
+label{
+  margin-right: 2em;
+}
+
+input[type=text] {
+  width: 500px;
+  height: 2em;
+}  
+
+textarea{
+  width: 500px;
+  height: 10em;
+  text-align: left;
+}
+
+.form {
+  padding-bottom: 1.5rem;
+}
+
+.submit-button{
+  margin-left: 13em;
+}
