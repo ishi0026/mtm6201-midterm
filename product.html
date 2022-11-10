@@ -4,26 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/32568561d7.js" crossorigin="anonymous"></script>
-    <title>Product</title>
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7d48374ed.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Smile Bake - Product</title>
 </head>
 <body>
-    <!--container for the navigation bar-->
-    <div class="container">
-        <section class="top-nav">
+    <!-- Navigation menu at the top of the page is displayed vertically on mobile and horizontally in desktop -->
+    <nav>
+        <div class="logo container">
             <a href="index.html" class="logo">
-                <img src="images/logo.jpg" alt="logo">
+                <img src="images/logo.jpg" alt="Smile bake">
             </a>
- 
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="ourstory.html">Our story</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        </div>
+
+        <div class="menu-nav container">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                 <li>
+                    <a href="about.html">Our story</a>
+                </li>
+                <li>
+                    <a href="product.html">Product</a>
+                </li>
+               
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
             </ul>
-        </section>
-    </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="product-container">
+            <!-- The title for the product is aligned to the center -->
+            <div class="product-title">
+              <h1> Which one do you like? </h1>
+            </div>
+
+            <!-- The products are displayed in 3 columns on mobile and on desktop -->
+
+            <div class="product-grid">
+                <!-- The title for the product category is aligned to the left -->
+                <div class="product-category">
+                    <a href="#">
+                        <img
+                        srcset="images/bread-200x200.jpg 200w,
+                                images/bread-300x300.jpg 300w"
+
+                        sizes="(max-width: 200px) 200px,
+                               (max-width: 300px) 300px"
+
+                        src="images/bread-300x300.jpg" 
+                
+                        alt="Photo of a bread">
+                    </a>
+                    <p>Bread</p>
+                </div>
+
+                <div class="product-category">
+                    <a href="#">
+                        <img
+                        srcset="images/cake-200x200.jpg 200w,
+                                images/cake-300x300.jpg 300w"
+
+                        sizes="(max-width: 200px) 200px,
+                               (max-width: 300px) 300px"
+
+                        src="images/cake-300x300.jpg" 
+                
+                        alt="Photo of a cake">
+                    </a>
+                    <p>Cake</p>
+                </div>
+
+                <div class="product-category">
+                    <a href="#">
+                        <img
+                        srcset="images/special-200x200.jpg 200w,
+                                images/special-300x300.jpg 300w"
+
+                        sizes="(max-width: 200px) 200px,
+                               (max-width: 300px) 300px"
+
+                        src="images/special-300x300.jpg" 
+                
+                        alt="Photo of special one">
+                    </a>
+                    <p>Special</p>
+                </div>
+
+
+
+            </main>
+
 </body>
 </html>
