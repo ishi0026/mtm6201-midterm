@@ -25,7 +25,7 @@
             </a>
         </div>
 
-        <div class="menu-nav container">
+        <div class="menu-nav container" role="navigation">
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -53,7 +53,7 @@
 
     <main>
     <!-- Our Story Section has a background image and is displayed vertically on mobile and in 4 columns in desktop -->
-        <div class="tourstory">
+        <div class="tourstory" role="ourstory">
             <h2>Our Story</h2>
         </div>
         <div class="ourstory">
@@ -69,12 +69,12 @@
             </div>
         </div>
         <div class= "firststore">
-                    <img src="images/firststore-500x400.jpg" alt="First Store">
+            <img src="images/firststore-500x400.jpg" alt="First Store" aria-label="first-storephoto">
         </div>
         
         <!-- Featured Products Title is centred -->
 
-        <div class="featured-container">
+        <div class="featured-container" role="products-sample-description">
             <h2>Products</h2>
             <!-- Featured Products Section is displayed in 2 columns on mobile and 3 columns on desktop -->
             <div class="featured-grid">
@@ -91,7 +91,9 @@
 
                             src="images/bread1-150x200.jpg" 
                             
-                            alt="Photo of bread1">
+                            alt="Photo of bread1"
+                            
+                            aria-label="bread1">
                     </a>
                 </div>
                 <div class="product">
@@ -106,7 +108,9 @@
 
                                 src="images/bread2-150x200.jpg" 
                                 
-                                alt="Photo of bread2">
+                                alt="Photo of bread2"
+
+                                aria-label="bread2">
                     </a>
                 </div>
 
@@ -122,7 +126,9 @@
 
                             src="images/bread3-150x200.jpg" 
                             
-                            alt="Photo of bread3">
+                            alt="Photo of bread3"
+                            
+                            aria-label="bread3">
                     </a>
                 </div>
 
@@ -138,7 +144,10 @@
 
                             src="images/bread4-150x200.jpg" 
                             
-                            alt="Photo of bread4">
+                            alt="Photo of bread4"
+                            
+                            aria-label="bread4">
+
                     </a>
                 </div>
               
@@ -147,7 +156,7 @@
 
         <!-- The about us section in the homepage has a title and text and an image. It's displayed vertically on mobile and in 2 columns in desktop -->
 
-        <div class="home-info">
+        <div class="home-info" role="store-schedule">
             
             <div class="scard">
 
@@ -162,7 +171,7 @@
                 
             </div>
             <div class="calendar">
-                <img src="images/calendar.jpg" alt="Photo of a calendar">
+                <img src="images/calendar.jpg" alt="Photo of a calendar" aria-label="calender">
             </div>
         </div>
     
@@ -171,7 +180,7 @@
 
     <!-- The footer section has a green colour background and is displayed vertically on mobile and horizontally in desktop -->
     <footer>
-        <div class= "copyright">
+        <div class= "copyright" role="contentinfo">
             <h6>&copy; Copyright Smile Bake 2022</h6> 
         </div> 
         <div class= "sns">    
