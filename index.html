@@ -53,24 +53,40 @@
 
     <main id="main" role="main">
     <!-- Our Story Section has a background image and is displayed vertically on mobile and in 4 columns in desktop -->
-        <div class="tourstory">
-            <h2>Our Story</h2>
+<!-- Featured Products Title is centred -->
+
+<div class="featured container">
+
+    <!-- The Our Story section in the homepage has a title, text and an image. It's displayed vertically on mobile and in 2 columns in desktop -->
+    <h2>Our Story</h2>
+   
+    <div class="ourstory container">
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                Cras fringilla leo sem. Aenean luctus justo quis nibh suscipit scelerisque.<br>
+                Tempora nemo rem cupiditate reprehenderit? Rerum sint nobis eos eaque odit cum error, maiores iure incidunt.
+                <br><br><br><br><br><br><br><br><br>
+                <a href="https://soniaromero90.github.io/mtm6201-midterm/about.html" class="button1">Read More></a>
+            </p>
         </div>
-        <div class="ourstory">
-            <div class="ourstory-flex container">
-                <div class="story-card">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vero voluptates ratione velit rem. Tempora nemo rem cupiditate reprehenderit? Rerum sint nobis eos eaque odit cum error, maiores iure incidunt. 
-                    </p>
-                        <div class="readmore-button">
-                            <a href="#">Read more</a>
-                        </div>
-                </div>
-            </div>
+
+        <div>
+            <img 
+                srcset="images/firststore-500x400.jpg 500w
+                        images/firststore-900x720.jpg 900w"
+
+                sizes="(max-width: 500px) 500px,
+                       (max-width: 900px) 900px"
+
+                src="images/firststore-900x720.jpg" 
+    
+                alt="Photo of First Store"
+                
+                aria-label="first store photo">
         </div>
-        <div class= "firststore">
-            <img src="images/firststore-500x400.jpg" alt="First Store" aria-label="first-storephoto">
-        </div>
+
+    </div>
         
         <!-- Featured Products Title is centred -->
 
@@ -147,31 +163,43 @@
                             alt="Photo of bread4"
                             
                             aria-label="bread4">
-
                     </a>
                 </div>
               
             </div>
-        </div>
+       
 
-        <!-- The about us section in the homepage has a title and text and an image. It's displayed vertically on mobile and in 2 columns in desktop -->
+            <!-- The Schedule section has has a title, time schedule by day and an image. It is shown vertically on mobile and in 2 columns in desktop -->
+            <h2>Schedule</h2>
+            <div class="schedule container">
+               <div> 
+                  <p>
+                      <h3>Wed-Fri    8 a.m. - 4 p.m.</h3>
+                  </p>
+                  <p>
+                      <h3>Sat             9 a.m. - 5 p.m.</h3>
+                  </p>
+                  <p>
+                      <h3>Sun            9 a.m. - 4 p.m.</h3><br><br><br><br>
+                  </p>
+                  <a href="contact.html" class="button2">Contact</a>
+               </div>
 
-        <div class="home-info">
-            
-            <div class="scard">
+               <div>
+                  <img 
+                    srcset="images/calendar-500x400.jpg 500w
+                            images/calendar-768x615.jpg 768w"
 
-                <h2>Schedule</h2>
-                <!-- <p> -->
-                    <h3>Wed-Fri    8 a.m. - 4 p.m.</h3>
-                <!-- </p> -->
-                <!-- <p> -->
-                    <h3>Sat             9 a.m. - 5 p.m.</h3>
-                <!-- </p> -->
-                    <h3>Sun            9 a.m. - 4 p.m.</h3>
-                
-            </div>
-            <div class="calendar">
-                <img src="images/calendar.jpg" alt="Photo of a calendar" aria-label="calender">
+                    sizes="(max-width: 500px) 500px,
+                           (max-width: 768px) 768px"
+
+                    src="images/calendar-768x615.jpg" 
+        
+                    alt="Photo of Calendar"
+                    
+                    aria-label="calender">
+               </div>
+
             </div>
         </div>
     
