@@ -132,9 +132,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  text-align:left;
-  padding-top: 12em;
-  padding-bottom: 12em;
+
+  padding-top: 8em;
+  padding-bottom: 8em;
  
 }
 
@@ -145,7 +145,7 @@ header {
   bottom: 50%;
 
   margin: auto;
-  max-width: 900px;
+  max-width: 768px;
 
 }
 
@@ -156,105 +156,51 @@ h1 {
   margin-bottom: 10px;
 }
 
-.hero-section > p {
-  color: white;
-  font-size: 1em;
-
-  padding-right: 30%;
-
-  margin-bottom: 30px;
-}
-
 /* Featured Products section in the homepage */
 
-main {
-  background-color:rgb(226, 212, 226);
+
+main{
+  background-color: rgb(226, 212, 226);
 }
 
-/* Our story section in the homepage */
-
-.tourstory {
-  padding-left: 10em;
-}
-
-.ourstory {
-  display: flex;
-  flex-direction: row;
-  background-color: #FFF;
-  width: 600px;
-  height: 338px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin-left: 10em;
-  margin-right: 5em;
-  margin-bottom: 6em;
-  padding-top: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-bottom: 2em;
-  font-family: 'Gabriola', sans-serif;
-  font-size: 1em;
-  float: left;
-}
-
-
-h3 {
-  font-family: 'Gabriola', sans-serif;
-
-  padding-bottom: 10px;
-}
-
-.ourstory h2, .story-card p {
-  color: rgb(0, 0, 0);
-}
-.ourstory h2 {
-  margin-bottom: 2em;
-}
-
-.firststore {
-  margin-bottom: 20px;
-}
-
-
-/* The Our Story is displayed vertically on mobile and horizontally on desktop */
-
-.ourstory-flex {
-  display: flex;
-  flex-direction: row;
-}
-
-.story-card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.story-card p {
-  text-align: left;
-  margin: 0 2em;
-  font-size: 1.2em;
-  padding-bottom: 10px;
-}
-
-.readmore-button {
-  text-align: left;
-  margin: 0 2em;
-  font-size: 1.2em;
-  padding-bottom: 10px;
-}
 
 h2 {
   color: #000000;
   font-family: 'Gabriola', sans-serif;
-  text-align: left;
+
   font-size: 2em;
 
- 
-  padding-top: 1em;
+  text-align: left;
+
   margin-bottom: 1em;
+
+  padding-top: 1em;
   
+}
+
+
+/* Our story section in the homepage */
+/* The Our Story section is displayed vertically on mobile, and it has paragraphs, a button to go to the Our Story page and an image */
+
+.ourstory {
+  display: flex;
+  flex-direction: column;
+}
+
+.ourstory div p {
+  padding: 1em;
+  background-color: white;
+}
+
+.ourstory div img {
+  width: 100%;
+  height: 95%;
+}
+
+.button1{
+  font-family: Arial;
+  font-size: 120%;
+  text-decoration: none;
 }
 
 /* put product images using flex  */
