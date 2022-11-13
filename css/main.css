@@ -209,29 +209,15 @@ h2 {
 .product {
   display: flex;
   flex-direction: column;
-  float: left;
 }
 
 .product img {
-  width: 70%;
-  height: 100%;
-  margin-bottom: 10px;
-  border: 0.2em;
-  border-color: gray;
-}
-
-.product p {
-  font-size: 1.1em;
-  
+  width: 100%;
   margin-bottom: 10px;
 }
 
-/* The featured section shows a grid with 4 products in a row on mobile. */
 
-.featured-container{
-  clear: left;
-  margin-left: 10em;
-}
+/* The featured section shows a grid with the products in 2 columns on mobile. */
 
 .featured-grid {
   display: grid;
@@ -259,53 +245,51 @@ h2 {
   grid-row: 2 / 3;
 }
 
-/* About us information in the homepage */
-/* The info section is displayed vertically on mobile, and it has a title, paragraphs, a button to go to the About page and an image */
+/* Schedule information in the homepage */
 
-.home-info{
-  margin-left: 10em;
+/* This section is displayed vertically on mobile, and it has a time table, a button to go to the Contact page and a calendar image */
 
-}
-
-.home-info h2 {
-  color: #000000;
-  font-family: 'Gabriola', sans-serif;
-  text-align: left;
-
-
+.schedule {
   display: flex;
   flex-direction: column;
-
-  margin-top: 20px;
-  text-align: left;
-  
+  padding: 2em;
 }
 
-.home-info div {
-  margin-bottom: 30px;
-  background-size: cover;
-
+.schedule div {
+  margin-top: 1em;
 }
 
-.scard h3{
-  width: 400px;
-  float:left;
-  margin-left: 5em;
+.schedule div h3{
   font-size: 15pt;
   font-weight: bold;
   font-family: 'MyradVariable', serif;
   white-space: pre;
 }
 
-.calendar img {
-  width: 60%;
-  height: 60%;
-  float: right;
-  margin-top: 5em;
-  margin-left: 2em;
-  margin-right: 10em;
+.schedule div img {
+  width: 100%;
 }
 
+.button2 {
+
+  display: block;
+  text-align: center;
+
+  color: white;
+  background-color: #5bce5b;
+  text-transform: uppercase;
+
+  text-decoration: none;
+  padding: 1em 2em;
+
+  margin-bottom: 1.3em;
+
+  border-radius: 20px;
+}
+
+.button2:hover {
+  background-color: #d91b97;
+}
 
 /* Footer Section ok*/
 /* The footer section has a backround colour and is displayed horizontally on mobile */
@@ -316,157 +300,129 @@ footer {
   padding: 10px;
   color: white;
 
+  align-items: center;
+
   display: flex;
   flex-direction: column;
 }
 
 footer p {
   text-align: center;
-  font-size: .5em;
+  font-size: 1em;
 }
 
-footer a {
+/* The SNS icons change into each colour when the mouse is hover */
+
+footer i {
+  padding: 10px;
+  text-align: center;
+}
+
+a i {
+  transition: all 0.3s linear;
+}
+
+a:hover i {
+  transform: scale(1.5);
+}
+
+.facebook:hover {
+  color: rgb(128, 19, 230);
+}
+
+.instagram:hover {
+  color: #e11d74;
+}
+
+.twitter:hover {
+  color: #00adb5;
+}
+
+
+/* Product.html Page CSS Style */
+
+
+/* The heading is aligned to the center */
+
+.center-heading {
+  font-family: 'Gabriola', sans-serif;
+  font-size: 450%;
+  color: black;
+  text-align: center;
+  padding: 1em;
+}
+
+ /* The product section shows a grid with the products in one column on mobile. */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+
+  gap: 10px;
+
+  text-align: center;
+  
+}
+
+
+.product-grid p{
+  font-family: 'Gabriola', sans-serif;
+  font-size: 250%;
+}
+
+.products img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.productss img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.productss p{
+  font-family: 'Arial';
+  font-size: 150%;
+}
+
+/* The Order buttons change colours when the mouse is hover */
+.button4 {
+  position: relative;
+  left: 25%;
+  top: 0%;
+
+  display: block;
+  text-align: center;
+
   color: white;
-}
+  background-color: navy;
+  text-transform: uppercase;
 
-
-.sns li{
   text-decoration: none;
-  float: right;
-  margin-right: 10px;
+  padding: 1em 2em;
+
+  margin-bottom: 1.3em;
+
+  border-radius: 20px;
+  width: 180px;
 }
 
-.fa-brands {
-  color: white;
+.button4:hover {
+  background-color: rgb(254, 150, 14);
 }
 
-footer a:hover {
-  color: #5bce5b;
-}
-
-.fa-brands:hover {
-  color: #5bce5b;
-}
-
-ul {
-  list-style: none;
-} 
-
-/***********
-
-Product.html Page CSS Style 
-
-
-*************/
-
-/* The Menu title has a bacckground image and the text is centred */
-
-.product-container{
-  display: flex;
-  flex-direction: column;
-}
-
-.product-title h1{
-    display: flex;
-    flex-direction: column;
-    color: #000000;
-    font-size: 50pt;
-    font-family: 'Gabriola', sans-serif;
-    text-align:center;
-    padding-top: 1em;
-    margin-bottom: 1em;
-}
-
- /* The Featured products section will be displayed in 3 columns */
-
- .product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr) ;
-}
-
-.product-category{
-    font-family: 'Gabriola', sans-serif;
-    font-weight: bold;
-    font-size: 250%;
-    text-align: center;
-    margin: 1em;
-}
-
-.product-category img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-}
-
-.product{
-    font-family: Arial;
-    font-size: 150%;
-    text-align: center;
-    margin: 1em;
-    justify-content: center;
-	align-items: center;
-}
-
-.product img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
-
-.button2 {
-
-    display: block;
-    text-align: center;
-    width: 240px;
-    color: white;
-    background-color: #5bce5b;
-    border-color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1em 2em;
-    margin-bottom: 1.3em;
-}
-
-.button2:hover {
-    background-color: #312C74;
-}
-
-
-/* The heading is aligned to the left */
-
-.left-heading {
-    text-align: left;
-}
-
-
-/***********
-
-about.html Page CSS Style 
-
-
-*************/
+/* About.html Page CSS Style */
 
 /* The Our Story has 3 images and is displayed vertically on mobile and in 2 columns on desktop */
-
-.ourstory-title{
-  text-align: left;
-  font-size: 20pt;
-  margin-left: 2em;
-  padding-top: 1em;
-}
-
-.ourstory-container{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
- align-items: center;
-}
 
 .flex-ourstory {
    display: flex;
    flex-direction: column;
-   padding-bottom: 1em;
+   padding-bottom: 2em;
+   gap: 50px;
 }
 
 .origins{
