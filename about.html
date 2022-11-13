@@ -22,7 +22,7 @@
 
     <nav role="navigation">
             <a href="index.html" class="logo">
-                <img src="images/logo.jpg" alt="Smile bake">
+                <img src="images/logo.png" alt="Smile bake">
             </a>
 
         <div class="menu-nav container">
@@ -48,14 +48,14 @@
     <main> 
         
         <div class="container" role="ourstory">
+
             <!-- The Our Story section has the title, text and an image. It is displayed in one column in mobile and divided in 2 columns on desktop -->
-            <h2> Our Story </h2>
-        </div>
+            <h2 class="left heading"> Our Story </h2>
 
             <div class="flex-ourstory">
 
                 <div class="card">
-                    <h2> Origins </h2>
+                    <h2> Origins </h2>               
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla leo sem. Aenean luctus justo quis nibh suscipit scelerisque.
                     </p>
@@ -78,11 +78,11 @@
                     src="images/owner-400x200.jpg" 
         
                     alt="Photo of Owner"
-                                                
+                    
                     aria-label="owner photo">
+
                 </div>
 
-                
                 <div>
                     <img 
                     srcset="images/concept-300x150.jpg 300w
@@ -94,8 +94,9 @@
                     src="images/concept-400x200.jpg" 
         
                     alt="Photo of Concept"
-                                                
-                        aria-label="photo imaged concept">
+                    
+                    aria-label="photo of imaged concept">
+
                 </div>
                 
                 <div class="card">
@@ -123,7 +124,7 @@
                         Fusce in risus enim. Quisque nec tortor nec arcu pellentesque consectetur. Ut suscipit purus in risus fermentum auctor. Etiam id diam sit amet velit euismod sagittis. 
                     </p>
                 </div>
-                
+
                 <div>
                     <img 
                       srcset="images/mission-300x150.jpg 300w
@@ -133,14 +134,16 @@
                            (max-width: 400px) 400px"
 
                       src="images/mission-400x200.jpg" 
-                        
+        
+                      alt="Photo of Mission"
+                      
                       aria-label="photo imaged mission">
+
                 </div>
 
-             </div>                
-           </div>
+            </div>
         </div>
-  </main>
+    </main>
 
     <!-- The footer section has a green colour background and is displayed vertically on mobile and horizontally in desktop -->
 
@@ -149,9 +152,15 @@
             <h6>&copy; Copyright Smile Bake 2022</h6> 
         </div> 
         <div class= "sns">    
-            <li><i class="fa-brands fa-facebook"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-twitter"></i></li>
+            <a class="facebook">    
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a class="twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
         </div>
       </footer>
 
