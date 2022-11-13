@@ -626,41 +626,88 @@ textarea{
 
 /* About.html desktop version */
 
+/* The Our Story will be displayed in 2 columns in desktop size. One for the text is located at one side and one for the image is positioned on the other side */
+
+.flex-ourstory {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.card {
+width: 400px;
+height: 400px;
+margin: 1em;
+}
+
+.flex-ourstory div img {
+  width: 416px;
+  height: 416px;
+  margin: 1em;
+  transition: 0.2s ease-in-out;
+}
+
+/* With the screen size more than 768px, the photos for introduction will shrink when the mouse hovers */
+.flex-ourstory div img:hover {
+  transform: scale(.9);
+}
+
+/* Product.html desktop version */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+
+}
+
+.productss a img {
+  transition: 0.2s ease-in-out;
+}
+
+.productss a img:hover {
+  transform: scale(.9);
+}
+
+/* Whith the screen size more than 768px, the 'Order' buttons will shake up and down when the mouse hovers */
+
+@keyframes order-swing {
+  15% {
+      transform: translateY(5px);
+  }
+  30% {
+      transform: translateY(-5px);
+  }
+  50% {
+      transform: translateY(3px);
+  }
+  65% {
+      transform: translateY(-3px);
+  }
+  80% {
+      transform: translateY(2px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.button4:hover{
+  animation: order-swing 0.5s ease;
+  animation-iteration-count: 1;
+
+}
+
+.button4 {
+  position: relative;
+  left: 12%;
+  top: 0%;
+}
+
+/* Contact.html desktop version */
+
 
 /* The about information will be displayed in 2 columns in desktop size. One for the text at the left and one for the image on the right */
-
-  .flex-ourstory {
-      display: flex;
-      flex-direction: row;
-  }
-
-/* The team section will be displayed horizontally when the screen is more than 900px */
-
-  .ophoto, .origins, .concept, .origins {
-      display: flex;
-      flex-direction: row;
-      gap: 1em;
-  }
-
-  .ourstory-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-  }
-/* Each team member photo will shrink a little when the mouse hovers */
-
-  .ophoto img {
-      transition: 0.2s ease-in-out;
-  }
-
-  .ophoto img:hover {
-      transform: scale(.9);
-  }
-
-  /* Contact.html desktop version */
-
-
-  /* The about information will be displayed in 2 columns in desktop size. One for the text at the left and one for the image on the right */
 
   .flex-about {
   display: flex;
