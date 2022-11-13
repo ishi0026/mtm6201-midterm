@@ -432,7 +432,7 @@ a:hover i {
 
 .card h2{
   font-family: 'Gabriola', sans-serif;
-  font-size: bold;
+  font-weight: bold;
 }
 
 .flex-ourstory div img {
@@ -706,12 +706,21 @@ margin: 1em;
 
 /* Contact.html desktop version */
 
-
-/* The about information will be displayed in 2 columns in desktop size. One for the text at the left and one for the image on the right */
-
-  .flex-about {
+.message {
   display: flex;
   flex-direction: row;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  align-items: center;
+}
+
+.message h2{
+  text-align: left;
+  margin-bottom: 20em;
+}
+
+.contact-form{
+  align-items: end;
 }
 
 }
