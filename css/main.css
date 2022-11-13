@@ -552,28 +552,24 @@ textarea{
     grid-template-rows: 1fr ;
 }
 
-  /* The About info in the homepage is going to split into 2 columns, one for the title, paragraphs and button and the other column with the image */
+/* With the screen size more than 768px, the category photos of products will shrink when the mouse hovers */
 
-  .home-info {
-      display: flex;
-      flex-direction: row;
-      gap: 10px;
-  }
+.product a img {
+  transition: 0.2s ease-in-out;
+}
 
-  /* The footer will be displayed horizontally on desktop version */
+.product a img:hover {
+  transform: scale(.9);
+}
 
-  footer {
-      display: flex;
-      flex-direction: row;
+/* The Schedule section will be displayed in 2 columns on descktop screen */
+.schedule {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
 
-      justify-content: space-between;
-  }
-
-  footer img {
-      width: 100px;
-  }
-
-  /* Whith the screen size more than 900px, the buttons to add to cart will shake when the mouse hovers.  */
+ /* Whith the screen size more than 768px, the 'Contact' button will shake when the mouse hovers */
 
   @keyframes product-swing {
       15% {
@@ -601,18 +597,21 @@ textarea{
       animation-iteration-count: 1;
 
   }
+  /* The footer will be displayed horizontally on desktop version */
 
-  /* Whith the screen size more than 900px, the photos of products will shrink when the mouse hovers */
+  footer {
+    display: flex;
+    flex-direction: row;
 
-  .product a img {
-      transition: 0.2s ease-in-out;
+    justify-content: space-between;
   }
 
-  .product a img:hover {
-      transform: scale(.9);
+  footer i {
+      width: 10px;
+      gap: 10px;
   }
 
-    /* Whith the screen size more than 900px, the menu links will grow a little bit when the mouse hovers */
+    /* On the screen size more than 768px, the menu links will grow a little bit when the mouse hovers */
 
   .menu-nav ul li a {
       transition: 0.2s ease-in-out;
@@ -625,7 +624,7 @@ textarea{
       transition: 0.2s ease-in-out;
   }
 
-/* Ourstory.html desktop version */
+/* About.html desktop version */
 
 
 /* The about information will be displayed in 2 columns in desktop size. One for the text at the left and one for the image on the right */
