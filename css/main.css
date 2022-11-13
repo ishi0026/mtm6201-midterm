@@ -456,68 +456,69 @@ a:hover i {
     justify-content: center;
 }
 
-.contact-title h2{
-    text-align: left;
-    margin-left: 5em;
-    font-size: 30pt;
-    float: left;
+.contact-flex p{
+  text-align: left;
 }
 
-.contact-title p{
-    text-align: center;
-    font-size: 15pt;
-    font-weight: bold;
-    padding-top: 2em;
+.contact-title{
+  font-size: 14pt;
+  font-weight: bold;
+  padding-top: 0.5em;
 }
 
-.messagearea .form{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    margin-left: 10em;
-}
-
-.name, .email, .tel, .message{
-    margin-bottom: 3em;
-    white-space: pre;
-}
-
-label{
-    margin-right: 2em;
+.contact-form{
+  text-align: left;
+  justify-content: space-around;
 }
 
 input[type=text] {
-    width: 500px;
-    height: 2em;
+  width: 450px;
+  height: 2em;
+  margin: 1em;
 }  
 
 textarea{
-    width: 500px;
-    height: 10em;
-    text-align: left;
+  width: 450px;
+  margin: 1em;
+  height: 10em;
+  text-align: left;
 }
 
-.form {
-    padding-bottom: 1.5rem;
+/* The Submit button will turn green when mouse hovers */
+.button3 {
+  position: relative;
+  left: 35%;
+  top: 80%;
+
+  display: block;
+  text-align: center;
+
+  color: white;
+  background-color: #d91b97;
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  width:100px;
+
+  padding: 1em 2em;
+
+  margin-bottom: 1.3em;
+
+  border-radius: 20px;
 }
 
-.submit-button{
-    margin-left: 13em;
+.button3:hover {
+  background-color: #5bce5b;
 }
 
-/***************
 
-Desktop Version (More than 900px)
-
-****************/
-
-
+/* Desktop Version (More than 768px) */
 
 /* Homepage CSS Style */
 
 
-
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
 
   /* The Menu will change to horizontal when the screen is bigger than 900px */
 
@@ -535,20 +536,21 @@ Desktop Version (More than 900px)
       width: 150px;
   }
 
-  /* The Featured products section will be displayed in 4 columns */
+  /* The Our Story section is going to split into 2 columns, one column with paragraphs and button and the other column with the image */
 
-  .featured-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 1fr ;
-  }
+  .ourstory {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 
-  /* The services will be displayed horizontally on desktop size */
+/* The Featured products section will be displayed in 4 columns on desktop version*/
 
-  .service-flex {
-      display: flex;
-      flex-direction: row;
-  }
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr ;
+}
 
   /* The About info in the homepage is going to split into 2 columns, one for the title, paragraphs and button and the other column with the image */
 
