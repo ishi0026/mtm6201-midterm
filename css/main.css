@@ -416,96 +416,44 @@ a:hover i {
 
 /* About.html Page CSS Style */
 
-/* The Our Story has 3 images and is displayed vertically on mobile and in 2 columns on desktop */
+/* The Our Story has several images and is displayed vertically on mobile and in 2 columns on desktop */
 
 .flex-ourstory {
-   display: flex;
-   flex-direction: column;
-   padding-bottom: 2em;
-   gap: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+  gap: 50px;
 }
 
-.origins{
-   width: 500px;
-   height: 200px;
-   padding: 1em;
-   margin: 2em;
-   background-color: white;
+.card{
+  background-color: white;
+  padding: 0.5em;
 }
 
-.origins h3 {
-   font-size: 30pt;
-   font-weight: bold;
+.card h2{
+  font-family: 'Gabriola', sans-serif;
+  font-size: bold;
 }
 
-.origins p {
-   font-family: 'Gabriola', sans-serif;
-   font-size: 15pt;
+.flex-ourstory div img {
+  width: 100%;
+  height: 150%;
 }
 
-.concept {
-   width: 500px;
-   height: 200px;
-   padding: 1em;
-   margin: 2em;
-   background-color: white;
-}
-
-.concept h3 {
-   font-size: 30pt;
-   font-weight: bold;
-}
-
-.concept p {
-   font-family: 'Gabriola', sans-serif;
-   font-size: 15pt;
-}
-
-.mission {
-   width: 500px;
-   height: 200px;
-   padding: 1em;
-   margin: 2em;
-   background-color: white;
-   
-}
-
-.mission h3 {
-   font-size: 30pt;
-   font-weight: bold;
-}
-
-.mission p {
-   font-family: 'Gabriola', sans-serif;
-   font-size: 15pt;
-}
-
-.ophoto {
-    display: flex;
-    flex-direction: column;
-    padding: 2em;
-}
-
-.ophoto img {
-  
-   width: 125%;
-   height: 230px;
-}
-
-
-/***********
-
-Contact.html Page CSS Style 
-
-
-*************/
+//* Contact.html Page CSS Style */
 
 /* The Contact has several empty spaces for the input of personal information and is displayed vertically on mobile */
+
+.message h2{
+  margin-right: 400px;
+}
 
 .contact-flex {
     display: flex;
     flex-direction: column;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-title h2{
