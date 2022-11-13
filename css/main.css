@@ -53,13 +53,11 @@ table {
 	border-spacing: 0;
 }
 
-/*********************
-
-Start of my CSS Code 
-
-*********************/
 
 
+/* Start of CSS Code */
+
+/* Desktop Version */
 
 /* Home Page CSS Style ok*/
 
@@ -74,7 +72,7 @@ p {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 768px;
   margin: 0 auto;
 
   padding-left:  10px;
@@ -90,19 +88,14 @@ nav {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  height: 50px;
-  background-color: #FFF;
-  background: #5bce5b;
-  color: #FFF;
+  background-color: #5bce5b;
 }
 
 
 .logo img {
   display: block;
-  margin: 0px;
+  margin: auto;
   width: 40%;
-  height: 70%;
-  justify-content: space-between;
   padding-top: 10px;
   
 }
@@ -111,19 +104,23 @@ nav {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-
-
-  padding: 1em 1.5em;
+  padding: 0.8em 1.6em;
 }
+
 .menu-nav ul {
   list-style-type: none;
 }
 
 .menu-nav ul li {
-  padding: 1em 1.5em;
+  padding: 0.8em 1.6em;
   text-align: center;
 }
 
+/* The menu link changes colour when the mouse is hover */
+
+.menu-nav ul li a:hover {
+  background-color: #d91b97;
+}
 
 /* Homepage Header */
 
